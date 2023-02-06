@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HBW: Feedback</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link href="css/magic.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="HBW_Home.html"><img src="HotBeansWeb_Logo.png" left="20px" top="20px" width="75" height="45" alt="HotBeansWeb Logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto" >
+          <li class="nav-item"> <a class="nav-link" href="HBW_Home.html">Home</a> </li>
+		  <li class="nav-item"> <a class="nav-link" href="HBW_Our_Work.html">Our Work</a> </li>
+		  <li class="nav-item"> <a class="nav-link" href="HBW_Who_We_Are.html">Who we are</a> </li>
+		  <li class="nav-item"> <a class="nav-link" href="HBW_Our_Team.html">Our Team</a> </li>
+		  <li class="nav-item"> <a class="nav-link" href="HBW_Join_Us.html">Join Us</a> </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> More </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="HBW_Learn.html">Learn</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="HBW_Feedback.html"><strong>Feedback</strong><span class="sr-only">(current)</span></a> 
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <header>
+    <div class="container-fluid" style="background: url(7.gif), rgba(0,0,0,0.8); background-blend-mode: darken; background-size: cover; background-position: center; background-repeat: no-repeat">
+      <div class="row">
+        <div class="col-12 col-md-8 mx-auto">
+          <div class="jumbotron totalpadding" style="background: rgba(20,20,20, 0.4); ">
+            <div class="row text-center">
+              <div class="text-center text-light text-monospace text-shadow col-12">
+                <h2>Feedback:&nbsp;</h2>
+              </div>
+              <div class="text-center text-light col-12">
+                <!-- CONTACT FORM https://github.com/jonmbake/bootstrap3-contact-form -->
+                <form id="feedbackForm" class="text-center text-monospace text-shadow">
+                  <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Full Name" aria-describedby="nameHelp">
+                    <span id="nameHelp" class="form-text text-muted" style="display: none;">Please enter your full name.</span>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">E-Mail</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" aria-describedby="emailHelp">
+                    <span id="emailHelp" class="form-text text-muted" style="display: none;">Please enter a valid e-mail address.</span>
+                  </div>
+				  <div> <label for="weblike" class="paddingtop1">What's your overall rating of the website on a scale of 1(very poor) - 5(excellent)?</label> </div>
+				  <div class="form-check form-check-inline totalpadding">
+					  <input class="form-check-input" type="checkbox" id="Overall1" value="1">
+					  <label class="form-check-label" for="Overall1">1</label>
+				  </div>
+				  <div class="form-check form-check-inline">
+					  <input class="form-check-input" type="checkbox" id="Overall2" value="2">
+					  <label class="form-check-label" for="Overall2">2</label>
+				  </div>
+				  <div class="form-check form-check-inline">
+					  <input class="form-check-input" type="checkbox" id="Overall3" value="3">
+					  <label class="form-check-label" for="Overall3">3</label>
+				  </div>
+				  <div class="form-check form-check-inline">
+					  <input class="form-check-input" type="checkbox" id="Overall4" value="4">
+					  <label class="form-check-label" for="Overall4">4</label>
+				  </div>
+				  <div class="form-check form-check-inline">
+					  <input class="form-check-input" type="checkbox" id="Overall5" value="5">
+					  <label class="form-check-label" for="Overall5">5</label>
+				  </div>
+                  <div class="form-group">
+                    <label for="message">What General Improvements Would You Like To See Implemented?&nbsp;&nbsp;</label>
+                    <textarea rows="4" cols="50" class="form-control" id="generalimprovements" name="generalimprovements" placeholder="Suggest Some General Improvements!" aria-describedby="messageHelp"></textarea>
+                    <span id="messagegeneral" class="form-text text-muted" style="display: none;">Please enter a message.</span>
+                  </div>
+				  <div> <label for="weblike" class="paddingtop1">What's your rating of the website's aesthetics on a scale of 1(very poor) - 5(excellent)?</label> </div>
+				  <div class="form-check form-check-inline totalpadding">
+					  <input class="form-check-input" type="checkbox" id="Aesthetic1" value="1">
+					  <label class="form-check-label" for="Aesthetic1">1</label>
+				  </div>
+				  <div class="form-check form-check-inline">
+					  <input class="form-check-input" type="checkbox" id="Aesthetic2" value="2">
+					  <label class="form-check-label" for="Aesthetic2">2</label>
+				  </div>
+				  <div class="form-check form-check-inline">
+					  <input class="form-check-input" type="checkbox" id="Aesthetic3" value="3">
+					  <label class="form-check-label" for="Aesthetic3">3</label>
+				  </div>
+				  <div class="form-check form-check-inline">
+					  <input class="form-check-input" type="checkbox" id="Aesthetic4" value="4">
+					  <label class="form-check-label" for="Aesthetic4">4</label>
+				  </div>
+				  <div class="form-check form-check-inline">
+					  <input class="form-check-input" type="checkbox" id="Aesthetic5" value="5">
+					  <label class="form-check-label" for="Aesthetic5">5</label>
+				  </div>
+                  <div class="form-group">
+                    <label for="message">What Aesthetic Improvements Would You Like To See Implemented?&nbsp;&nbsp;</label>
+                    <textarea rows="4" cols="50" class="form-control" id="aestheticimprovements" name="generalimprovements" placeholder="Suggest Some Aesthetic Improvements!" aria-describedby="messageHelp"></textarea>
+                    <span id="messageaesthetic" class="form-text text-muted" style="display: none;">Please enter a message.</span>
+                  </div>
+				  <div class="form-group">
+                    <label for="weblike">Do You Like The Website?</label>
+					<select multiple class="form-control" id="exampleFormControlSelect1">
+      					<option>1</option>
+      					<option>2</option>
+      					<option>Full Stack</option>
+    				</select>
+				  </div>
+
+				  <div class="form-group">
+                    <label for="subject">Experience</label>
+                    <input type="experience" class="form-control" id="experience" name="experience" placeholder="Have you got any previous experience in web development? If so, where?" aria-describedby="nameHelp">
+                    <span id="experienceHelp" class="form-text text-muted" style="display: none;">Please enter any experience, or N/A.</span>
+                  </div>
+                  <div class="form-group">
+                    <label for="message">Message&nbsp;&nbsp;</label>
+                    <textarea rows="10" cols="100" class="form-control" id="message" name="message" placeholder="Message" aria-describedby="messageHelp"></textarea>
+                    <span id="messageHelp" class="form-text text-muted" style="display: none;">Please enter a message.</span>
+                  </div>
+                  <button type="submit" id="feedbackSubmit" class="btn btn-light btn-lg">Send</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+	<section class="jumbotron-fluid row mt-1">
+     <div class="navbar navbar-light" style="background: rgba(20,20,20); font-size: 75%;">
+      <div class="navbar-collapse col-md-1">
+        <ul class="navbar-nav mr-auto">
+			<a class="navbar-brand" href="HBW_Home.html"><img src="HotBeansWeb_Logo_W.png" left="20px" top="20px" width="120" height="72" alt="HotBeansWeb Logo"></a>
+        </ul>
+      </div>
+     </div>
+     <div class="navbar navbar-light col" style="background: rgba(20,20,20); font-size: 110%;">
+      <div class="navbar-collapse">
+        <ul class="navbar mr-auto">
+          <li class="nav-link"> <a class="nav-link text-light" href="HBW_Home.html">Home</a> </li>
+		  <li class="nav-link"> <a class="nav-link text-light" href="HBW_Our_Work.html">Our Work</a> </li>
+		  <li class="nav-link"> <a class="nav-link text-light" href="HBW_Who_We_Are.html">Who we are</a> </li>
+		  <li class="nav-link"> <a class="nav-link text-light" href="HBW_Our_Team.html">Our Team</a> </li>
+		  <li class="nav-link"> <a class="nav-link text-light" href="HBW_Join_Us.html">Join Us</a> </li>
+        </ul>
+      </div>
+     </div>
+	  </section>	
+		
+		
+	<section class="jumbotron-fluid row">
+     <div class="navbar navbar-light" style="background: rgba(20,20,20); font-size: 75%;">
+      <div class="navbar-collapse col-md-1">
+        <ul class="navbar-nav mr-auto">
+		  <li> <a class="nav-link text-light" href="HBW_Our_Work.html">About</a> </li>
+		  <li> <a class="nav-link text-light" href="HBW_Our_Work.html">Cookies</a> </li>
+		  <li> <a class="nav-link text-light" href="HBW_Our_Work.html">Media</a> </li>
+        </ul>
+      </div>
+     </div>
+     <div class="navbar navbar-light col" style="background: rgba(20,20,20); font-size: 75%;">
+      <div class="navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+		  <li> <a class="nav-link text-light" href="HBW_Our_Work.html">Privacy Policy</a> </li>
+		  <li> <a class="nav-link text-light" href="HBW_Our_Work.html">Terms and Conditions </a> </li>
+		  <li> <a class="nav-link text-light" href="HBW_Our_Work.html">Data Collection</a> </li>
+        </ul>
+      </div>
+     </div>
+	  </section>
+	<section>
+		<div class="row jumbotron-fluid navbar-light border-top">
+      		<div class="col padding1 paddingtop1" style="background: rgba(20,20,20)">
+        		<div class="text-center text-light">
+					<p>Copyright © HotBeansWeb. All rights reserved.</p>
+        		</div>
+      		</div>		
+		</div>
+	</section>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+    <script src="js/jquery-3.4.1.min.js"></script> 
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="js/popper.min.js"></script> 
+    <script src="js/bootstrap-4.4.1.js"></script>
+  </body>
+</html>
