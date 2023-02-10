@@ -43,17 +43,17 @@
               <div class="text-center text-light col-12">
                 <!-- CONTACT FORM https://github.com/jonmbake/bootstrap3-contact-form -->
                 <form id="feedbackForm" class="text-center text-monospace text-shadow">
-                  <div class="form-group">
-                    <label for="name">Full Name</label>
-                    <input type="text" class="form-control" id="name" name="name" placeholder="Full Name" aria-describedby="nameHelp">
-                    <span id="nameHelp" class="form-text text-muted" style="display: none;">Please enter your full name.</span>
+                  <div class="form-group paddingbottom1">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Name" aria-describedby="nameHelp" required>
+                    <span id="nameHelp" class="form-text text-muted" style="display: none;">Please enter your name.</span>
                   </div>
-                  <div class="form-group">
+                  <div class="form-group paddingbottom1">
                     <label for="email">E-Mail</label>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" aria-describedby="emailHelp">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" aria-describedby="emailHelp" required>
                     <span id="emailHelp" class="form-text text-muted" style="display: none;">Please enter a valid e-mail address.</span>
                   </div>
-				  <div> <label for="weblike" class="paddingtop1">What's your overall rating of the website on a scale of 1(very poor) - 5(excellent)?</label> </div>
+				  <div> <label for="weblike" class="paddingtop1">What's your overall rating of the website on a scale of 1 (very poor) to 5 (excellent)?</label> </div>
 				  <div class="form-check form-check-inline totalpadding">
 					  <input class="form-check-input" type="checkbox" id="Overall1" value="1">
 					  <label class="form-check-label" for="Overall1">1</label>
@@ -74,12 +74,12 @@
 					  <input class="form-check-input" type="checkbox" id="Overall5" value="5">
 					  <label class="form-check-label" for="Overall5">5</label>
 				  </div>
-                  <div class="form-group">
-                    <label for="message">What General Improvements Would You Like To See Implemented?&nbsp;&nbsp;</label>
-                    <textarea rows="4" cols="50" class="form-control" id="generalimprovements" name="generalimprovements" placeholder="Suggest Some General Improvements!" aria-describedby="messageHelp"></textarea>
+                  <div class="form-group paddingbottom1 paddingtop1">
+                    <label for="message">What, If Any, General Improvements Would You Like To See Implemented?&nbsp;&nbsp;</label>
+                    <textarea rows="4" cols="50" class="form-control" id="generalimprovements" name="generalimprovements" placeholder="Suggest Some General Improvements!" aria-describedby="messageHelp" required></textarea>
                     <span id="messagegeneral" class="form-text text-muted" style="display: none;">Please enter a message.</span>
                   </div>
-				  <div> <label for="weblike" class="paddingtop1">What's your rating of the website's aesthetics on a scale of 1(very poor) - 5(excellent)?</label> </div>
+				  <div> <label for="weblike" class="paddingtop1">What's your rating of the website's aesthetics on a scale of 1 (very poor) to 5 (excellent)?</label> </div>
 				  <div class="form-check form-check-inline totalpadding">
 					  <input class="form-check-input" type="checkbox" id="Aesthetic1" value="1">
 					  <label class="form-check-label" for="Aesthetic1">1</label>
@@ -100,31 +100,109 @@
 					  <input class="form-check-input" type="checkbox" id="Aesthetic5" value="5">
 					  <label class="form-check-label" for="Aesthetic5">5</label>
 				  </div>
-                  <div class="form-group">
-                    <label for="message">What Aesthetic Improvements Would You Like To See Implemented?&nbsp;&nbsp;</label>
-                    <textarea rows="4" cols="50" class="form-control" id="aestheticimprovements" name="generalimprovements" placeholder="Suggest Some Aesthetic Improvements!" aria-describedby="messageHelp"></textarea>
+                  <div class="form-group paddingbottom1 paddingtop1">
+                    <label for="message">What, If Any, Aesthetic Improvements Would You Like To See Implemented?&nbsp;&nbsp;</label>
+                    <textarea rows="4" cols="50" class="form-control" id="aestheticimprovements" name="generalimprovements" placeholder="Suggest Some Aesthetic Improvements!" aria-describedby="messageHelp" required></textarea>
                     <span id="messageaesthetic" class="form-text text-muted" style="display: none;">Please enter a message.</span>
                   </div>
-				  <div class="form-group">
-                    <label for="weblike">Do You Like The Website?</label>
-					<select multiple class="form-control" id="exampleFormControlSelect1">
-      					<option>1</option>
-      					<option>2</option>
-      					<option>Full Stack</option>
+				  <div> <label for="weblike" class="paddingtop1">What's your rating of the website's colour-scheme on a scale of 1 (very poor) to 5 (excellent)?</label> </div>
+				  <div class="form-check form-check-inline totalpadding">
+					  <input class="form-check-input" type="checkbox" id="Colour1" value="1">
+					  <label class="form-check-label" for="Colour1">1</label>
+				  </div>
+				  <div class="form-check form-check-inline">
+					  <input class="form-check-input" type="checkbox" id="Colour2" value="2">
+					  <label class="form-check-label" for="Colour2">2</label>
+				  </div>
+				  <div class="form-check form-check-inline">
+					  <input class="form-check-input" type="checkbox" id="Colour3" value="3">
+					  <label class="form-check-label" for="Colour3">3</label>
+				  </div>
+				  <div class="form-check form-check-inline">
+					  <input class="form-check-input" type="checkbox" id="Colour4" value="4">
+					  <label class="form-check-label" for="Colour4">4</label>
+				  </div>
+				  <div class="form-check form-check-inline">
+					  <input class="form-check-input" type="checkbox" id="Colour5" value="5">
+					  <label class="form-check-label" for="Colour5">5</label>
+				  </div>
+                  <div class="form-group paddingbottom1 paddingtop1">
+                    <label for="message">What, If Any, Colour-Scheme Improvements Would You Like To See Implemented?&nbsp;&nbsp;</label>
+                    <textarea rows="4" cols="50" class="form-control" id="colourimprovements" name="colourimprovements" placeholder="Any Colour-Scheme Improvements You Can Suggest?" aria-describedby="messageHelp" required></textarea>
+                    <span id="messagecolour" class="form-text text-muted" style="display: none;">Please enter a message.</span>
+                  </div>
+				  <div class="form-group paddingbottom1">
+                    <label for="weblike">Is There A Good Amount Of White-Space On The Site?</label>
+					<select multiple class="form-control text-center" id="WhiteSpaceRating" required>
+						<option>Yes</option>
+						<option>No</option>
     				</select>
 				  </div>
-
+				  <div class="form-group paddingbottom1">
+                    <label for="weblike">Is The Font Of The Site Readable?</label>
+					<select multiple class="form-control text-center" id="FontRating" required>
+						<option>Yes</option>
+						<option>No</option>
+    				</select>
+				  </div>
+				  <div> <label for="weblike" class="paddingtop1">What's your rating of the website's layout on a scale of 1 (very poor) to 5 (excellent)?</label> </div>
+				  <div class="form-check form-check-inline totalpadding">
+					  <input class="form-check-input" type="checkbox" id="Layout1" value="1">
+					  <label class="form-check-label" for="Layout1">1</label>
+				  </div>
+				  <div class="form-check form-check-inline">
+					  <input class="form-check-input" type="checkbox" id="Layout2" value="2">
+					  <label class="form-check-label" for="Layout2">2</label>
+				  </div>
+				  <div class="form-check form-check-inline">
+					  <input class="form-check-input" type="checkbox" id="Layout3" value="3">
+					  <label class="form-check-label" for="Layout3">3</label>
+				  </div>
+				  <div class="form-check form-check-inline">
+					  <input class="form-check-input" type="checkbox" id="Layout4" value="4">
+					  <label class="form-check-label" for="Layout4">4</label>
+				  </div>
+				  <div class="form-check form-check-inline">
+					  <input class="form-check-input" type="checkbox" id="Layout5" value="5">
+					  <label class="form-check-label" for="Layout5">5</label>
+				  </div>
+                  <div class="form-group paddingbottom1">
+                    <label for="message">What, If Any, Layout Improvements Would You Like To See Implemented?&nbsp;&nbsp;</label>
+                    <textarea rows="4" cols="50" class="form-control" id="layoutimprovements" name="layoutimprovements" placeholder="Suggest Some Layout Improvements!" aria-describedby="messageHelp" required></textarea>
+                    <span id="messagelayout" class="form-text text-muted" style="display: none;">Please enter a message.</span>
+                  </div>
+				  <div class="form-group paddingbottom1">
+                    <label for="weblike">What Is The Best Page On The Site, In Your Opinion?</label>
+					<select multiple class="form-control text-center" id="BestRating" required>
+						<option>"Home"</option>
+						<option>"Our Work"</option>
+						<option>"Who We Are"</option>
+						<option>"Our Team"</option>
+						<option>"Join Us"</option>
+						<option>"Learn"</option>
+    				</select>
+				  </div>
+                  <div class="form-group paddingbottom1">
+                    <label for="message">What Do You Think Of The Navigation Bar?&nbsp;&nbsp;</label>
+                    <textarea rows="4" cols="50" class="form-control" id="navimprovements" name="navimprovements" placeholder="What Do You Think Of The Navigation Bar?" aria-describedby="messageHelp" required></textarea>
+                    <span id="messagenav" class="form-text text-muted" style="display: none;">Please enter a message.</span>
+                  </div>
 				  <div class="form-group">
-                    <label for="subject">Experience</label>
-                    <input type="experience" class="form-control" id="experience" name="experience" placeholder="Have you got any previous experience in web development? If so, where?" aria-describedby="nameHelp">
-                    <span id="experienceHelp" class="form-text text-muted" style="display: none;">Please enter any experience, or N/A.</span>
+                    <label for="weblike">Does The Website Scale Well?</label>
+					<select multiple class="form-control text-center" id="ScaleRating" required>
+      					<option>Yes</option>
+      					<option>No</option>
+    				</select>
+				  </div>
+                  <div class="form-group paddingbottom1">
+                    <label for="message">Any Other Feedback?&nbsp;&nbsp;</label>
+                    <textarea rows="4" cols="50" class="form-control" id="otherfeedback" name="otherfeedback" placeholder="Any Other Feedback You'd Like To Give?" aria-describedby="messageHelp" required></textarea>
+                    <span id="messagefeedback" class="form-text text-muted" style="display: none;">Please enter a message.</span>
                   </div>
-                  <div class="form-group">
-                    <label for="message">Message&nbsp;&nbsp;</label>
-                    <textarea rows="10" cols="100" class="form-control" id="message" name="message" placeholder="Message" aria-describedby="messageHelp"></textarea>
-                    <span id="messageHelp" class="form-text text-muted" style="display: none;">Please enter a message.</span>
-                  </div>
-                  <button type="submit" id="feedbackSubmit" class="btn btn-light btn-lg">Send</button>
+				  <p>&nbsp;</p>
+				  <p>Thank You For Your Feedback :&#41;</p>
+                  <button type="submit" id="feedbackSubmit" class="btn btn-dark btn-outline-light text-shadow-light btn-lg">Submit</button>
+				  <p>&nbsp;</p>
                 </form>
               </div>
             </div>

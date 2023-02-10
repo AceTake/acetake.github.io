@@ -45,12 +45,12 @@
                 <form id="feedbackForm" class="text-center">
                   <div class="form-group">
                     <label for="name">Full Name</label>
-                    <input type="text" class="form-control" id="name" name="name" placeholder="Full Name" aria-describedby="nameHelp">
+                    <input type="text" class="form-control" id="name" name="name" value="" placeholder="Full Name" aria-describedby="nameHelp" required>
                     <span id="nameHelp" class="form-text text-muted" style="display: none;">Please enter your full name.</span>
                   </div>
 				  <div class="form-group">
                     <label for="position">Position Type</label>
-					<select multiple class="form-control text-center" id="exampleFormControlSelect2">
+					<select multiple class="form-control text-center" id="positionselect" value="" required>
       					<option>Front End</option>
       					<option>Back End</option>
       					<option>Full Stack</option>
@@ -58,22 +58,22 @@
 				  </div>
                   <div class="form-group">
                     <label for="email">E-Mail</label>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" aria-describedby="emailHelp">
+                    <input type="email" class="form-control" id="email" name="email" value="" placeholder="Email Address" aria-describedby="emailHelp" required>
                     <span id="emailHelp" class="form-text text-muted" style="display: none;">Please enter a valid e-mail address.</span>
                   </div>
 				  <div class="form-group">
                     <label for="subject">Experience</label>
-                    <input type="experience" class="form-control" id="experience" name="experience" placeholder="Have you got any previous experience in web development? If so, where?" aria-describedby="nameHelp">
+                    <input type="experience" class="form-control" id="experience" name="experience" value="" placeholder="Have you got any previous experience in web development? If so, where?" aria-describedby="nameHelp" required>
                     <span id="experienceHelp" class="form-text text-muted" style="display: none;">Please enter any experience, or N/A.</span>
                   </div>
                   <div class="form-group">
-                    <label for="message">Message&nbsp;&nbsp;</label>
-                    <textarea rows="10" cols="100" class="form-control" id="message" name="message" placeholder="Message" aria-describedby="messageHelp"></textarea>
+                    <label for="message">Why Should We Choose You?&nbsp;&nbsp;</label>
+                    <textarea rows="10" cols="100" class="form-control" id="message" name="message" value="" placeholder="Why are you the right person for our team?" aria-describedby="messageHelp" required></textarea>
                     <span id="messageHelp" class="form-text text-muted" style="display: none;">Please enter a message.</span>
                   </div>
 				  <div class="form-group totalpadding">
 					<label for="CV Input">CV File Attach</label>
-					<input type="file" class="form-control-file paddingleft40" id="CVfile">
+					<input type="file" class="form-control-file paddingleft40" id="CVfile" required>
 				  </div>
                   <button type="submit" id="feedbackSubmit" class="btn btn-dark btn-outline-light btn-lg text-shadow-light">Send</button>
                 </form>
